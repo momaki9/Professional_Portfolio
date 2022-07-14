@@ -1,41 +1,50 @@
-/* flexbox, media queries, and CSS variables */
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
     color: rgb(223, 207, 207);
-    
 }
 
+/* sets background color for the whole body */
 body {
     background-color: rgb(32, 30, 30);
 }
 
+
+/* section {
+    height: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+} */
+
 p {
-    line-height: 170%;
-    font-size: 24px;    
+    line-height: 175%;
+    font-size: 20px;         
 }
 
 img {
-    width: 700px;
-    height: 400px;
-    display: flex;
-    justify-content: space-around;
+    width: 600px;
+    height: 310px;   
+    padding: 20px;
+    margin: 10px;
+    /* flex-wrap: wrap;  */
 }
 
-nav ul li {
-    list-style: none;
-    display: inline-flex;
-    flex-wrap: wrap;
-    
-    /* width: 500px;
-    height: 500px; */
-    padding: 15px;
-    margin: 8px;
-    font-size: 25px;
-    border-style: solid;
-    background-color: rgb(10, 10, 10);
-    border-width: 1px;  
+h1 {
+    font-size: 42px;  
+    color: white;
+    width: 300px;
+    height: 100px;
+    margin-top: 8px;
 }
+
+h2 {
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 4px;
+     
+}
+
+/* -----start of the heading---- */
 
 .mainheader {
     display: flex;
@@ -44,25 +53,77 @@ nav ul li {
     flex-wrap: wrap;
 }
 
-.navlink {
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    
+    padding: 15px;
+    margin: 8px;
+    font-size: 25px;
+    border-style: solid;
+    background-color: rgb(10, 10, 10);
+    border-width: 1px;  
+}
+
+/* -----end of the heading---- */
+
+
+/* ---- START OF COPIED CODE ----------- */
+
+main {
+    /* Turns this element into a flexbox */
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;
+  }
+.maincontent {
+    /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
 }
 
-h1 {
-    font-size: 42px;
-    text-decoration: solid;
-    color: white;
-    width: 300px;
-    height: 100px;
-    margin-top: 8px;
-
+.maincontent.card {
+    /* With a flex-grow value of 2, this element grows twice as wide as others */
+    /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
+    flex: 2 1 200px;
 }
+
+/* -----start of the main content---- */
+/* .maincontent, .worksample, .othersamples {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;   
+}
+
+.aboutme, .samplecode, .other {
+    display: inline-flex;    
+    padding: 15px;
+    margin: 8px;
+}
+
+
+#aboutmelink, #samplelink {
+    
+    padding: 10px;
+    margin: 5px;
+} */
+
+/* -----    Links     ---- */
 
 /* since hyperlink was removed, should hover have some styling to inform visitors to click these? */
 a {
     text-decoration: none;
 }
 
+#mainimage:hover {
+    transform: scale(1.2, 1.2);
+}
 /* Insert @media queries here to show responsive design thru a desktop first approach*/
 
 @media screen and (max-width : 992px) {
