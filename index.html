@@ -5,47 +5,58 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./css/stylesheet.css">
     <body>
-        <header>
+        <header class="mainheader">
             <h1>Mostafa Maki</h1>
-            <!--     Insert recent photo here or an avatar     -->
-            <figure><img src="">Profile Picture</figure>
             <nav>
-                <!--    these should be links and include pictures?  -->
                 <ul>
-                    <li><a href="">About Me</a></li>
-                    <li>Samples of Work</li>
-                    <li>Contact Info</li>
+                    <li class="navlink"><a href="#aboutmelink">About Me</a></li>
+                    <li class="navlink"><a href="#samplelink">Samples of Work</a></li>
+                    <li class="navlink"><a href="#contactlink">Contact Info</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <p>
-                GIVEN I need to sample a potential employee's previous work
-                WHEN I load their portfolio
-                THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-            </p>
-            <p>
-                WHEN I click one of the links in the navigation
-                THEN the UI scrolls to the corresponding section
-            </p>
-            <p>
-                WHEN I click on the link to the section about their work
-                THEN the UI scrolls to a section with titled images of the developer's applications
-            </p>
-            <p id="needmoreinfo">
-                WHEN I am presented with the developer's first application
-                THEN that application's image should be larger in size than the others
-            </p>
-            <p id="moreinfo">
-                WHEN I click on the images of the applications
-                THEN I am taken to that deployed application
-            </p>
-            <p>
-                WHEN I resize the page or view the site on various screens and devices
-                THEN I am presented with a responsive layout that adapts to my viewport
-            </p>
+            <!--     Insert recent photo here or an avatar     -->
+            <figure><img src="./images/sanfran.jpeg"></figure> 
+            <section class="aboutme">
+                <div id="aboutmelink">
+                    <h2>About Me</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
 
+            </section>
+            <section class="worksamp">
+                <div id="samplelink">
+                    <h2>Samples of Work</h2>
+                </div>
+                <div class="workex">
+                    <article>Code Refactoring</article>
+                    <figure>
+                        <img src="./images/refactoring.jpeg" alt="" title="">
+                        
+                    </figure>
+                    <article>Random Password Generator</article>
+                    <img id="security" src="./images/security.jpeg" alt="" title="">
+
+                    <article>Web API: Code Quiz</article>
+                    <img src="./images/api_codequiz.jpeg" alt="" title="">
+                </div>
+                
+            </section>
+            
         </main>
+        <footer class="contactinfo">
+            <div id="contactlink">
+                <h3>Contact Info</h3>
+                    <div>
+                    <h4>123 456 7890</h4>
+                    <h4>thisismyemail@gmal.com</h4>
+                    <h4>GitHub</h4>
+                    </div>
+            </div>
+
+        </footer>
     </body>
 </head>
 </html>

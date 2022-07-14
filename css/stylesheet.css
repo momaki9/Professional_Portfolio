@@ -1,17 +1,78 @@
 /* flexbox, media queries, and CSS variables */
 * {
-    background-color: black;
-    color: white;
-}
-p {
-    line-height: 170%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    color: rgb(223, 207, 207);
     
 }
 
-#needmoreinfo, #moreinfo {
-    color: red;
+body {
+    background-color: rgb(32, 30, 30);
 }
 
-/* Insert @media queries here to show responsive design */
+p {
+    line-height: 170%;
+    font-size: 24px;    
+}
+
+img {
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+    /* width: 500px;
+    height: 500px; */
+    padding: 15px;
+    margin: 8px;
+    font-size: 25px;
+    border-style: solid;
+    background-color: rgb(10, 10, 10);
+    border-width: 1px;  
+}
+
+.mainheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.navlink {
+    flex: 1 0 200px;
+}
+
+h1 {
+    font-size: 42px;
+    text-decoration: solid;
+    color: white;
+    width: 300px;
+    height: 100px;
+    margin-top: 8px;
+
+}
+
+/* since hyperlink was removed, should hover have some styling to inform visitors to click these? */
+a {
+    text-decoration: none;
+}
+
+/* Insert @media queries here to show responsive design thru a desktop first approach*/
+
+@media screen and (max-width : 992px) {
+
+}
+
+@media screen and (max-width : 768px) {
+    
+}
+
+@media screen and (max-width : 576px) {
+    
+}
