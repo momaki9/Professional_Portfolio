@@ -7,12 +7,14 @@
     <body>
         <header>
             <h1>Mostafa Maki</h1>
+            <!--     Insert recent photo here or an avatar     -->
+            <figure><img src="">Profile Picture</figure>
             <nav>
+                <!--    these should be links and include pictures?  -->
                 <ul>
-                    <li>About</li>
-                    <li>Professional Experience</li>
+                    <li><a href="">About Me</a></li>
                     <li>Samples of Work</li>
-                    <li>Hobbies</li>
+                    <li>Contact Info</li>
                 </ul>
             </nav>
         </header>
@@ -30,11 +32,11 @@
                 WHEN I click on the link to the section about their work
                 THEN the UI scrolls to a section with titled images of the developer's applications
             </p>
-            <p>
+            <p id="needmoreinfo">
                 WHEN I am presented with the developer's first application
                 THEN that application's image should be larger in size than the others
             </p>
-            <p>
+            <p id="moreinfo">
                 WHEN I click on the images of the applications
                 THEN I am taken to that deployed application
             </p>

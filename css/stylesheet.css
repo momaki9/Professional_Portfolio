@@ -1,8 +1,17 @@
 /* flexbox, media queries, and CSS variables */
-
+* {
+    background-color: black;
+    color: white;
+}
 p {
     line-height: 170%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
     
 }
+
+#needmoreinfo, #moreinfo {
+    color: red;
+}
+
+/* Insert @media queries here to show responsive design */
