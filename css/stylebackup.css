@@ -1,0 +1,320 @@
+/* sets background color for the whole body */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(172, 161, 161);
+    background-color: rgb(29, 28, 28);
+}
+main {
+    display: flex;
+}
+
+section {
+    height: 600px;
+    width: 90%;
+    
+    
+}
+
+p {
+    line-height: 175%;
+    font-size: 20px;         
+}
+
+img {
+    display: flex;
+    width: 600px;
+    height: 310px;   
+    padding: 2px;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.473);
+    border: 3px solid rgba(0, 255, 255, 0.411);
+    border-radius: 19px;
+}
+
+h1 {
+    font-size: 42px;  
+    color: white;
+    width: 20%;
+    margin-left: 12%;
+    margin-top: 1%;
+    
+}
+
+/* -----start of the heading---- */
+#aboutmelink {
+    display: inline-flex;
+    width: 10%;
+    height: 10%;
+    padding: 8px;
+    margin: 8px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.mainheader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 8px;
+    
+}
+.avatar {
+    width: 450px;
+    height: 300px;
+    padding: 0;
+    margin: 18px;
+    
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 25px;
+    border: 1px solid rgb(33, 48, 44);
+    background-color: rgb(10, 10, 10);
+    border-radius: 12px;
+}
+/* -----end of the heading---- */
+/* -----start of the main---- */
+
+
+/* -----    Links     ---- */
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5{
+    font-size: 22px;
+}
+/* since hyperlink was removed, should hover have some styling to inform visitors to click these? */
+a {
+    text-decoration: none;
+}
+
+img {
+    -moz-box-shadow: inset 0 0 10px #777777;
+    -webkit-box-shadow: inset 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;    
+}
+
+img:hover {
+    transform: scale(1.05, 1.09);
+}
+/* Insert @media queries here to show responsive design thru a desktop first approach*/
+
+@media screen and (max-width : 992px) {
+
+}
+
+@media screen and (max-width : 768px) {
+    
+}
+
+@media screen and (max-width : 576px) {
+    
+}
+
+
+/* new */
+* {
+    border: 1px solid green;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(172, 161, 161);
+    background-color: rgb(29, 28, 28);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    flex: auto;  */
+}
+
+p {
+    line-height: 175%;
+    font-size: 20px;         
+}
+img {
+    width: 100%;
+    height: 280px;   
+    padding: 2px;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.473);
+    border: 3px solid rgba(0, 255, 255, 0.411);
+    border-radius: 19px;
+    
+}
+
+h1 {
+    font-size: 42px;  
+    color: white;
+    width: 30%;
+    height: 80px;
+    margin-left: 2%;
+    margin-top: 1%;
+    text-align: left;
+    
+}
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 25px;
+    border: 1px solid rgb(33, 48, 44);
+    background-color: rgb(10, 10, 10);
+    border-radius: 12px;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+header {
+    size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 8px;
+    flex: 0 2 80px;
+    
+}
+.worksample img {
+    width: 700px;
+    height: 380px; 
+
+}
+.submain {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.avatar {
+    width: 450px;
+    height: 300px;
+    padding: 0;
+    margin: 18px;
+    
+}
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5{
+    font-size: 22px;
+}
+/* since hyperlink was removed, should hover have some styling to inform visitors to click these? */
+a {
+    text-decoration: none;
+}
+
+img {
+    -moz-box-shadow: inset 0 0 10px #777777;
+    -webkit-box-shadow: inset 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;   
+    
+}
+
+img:hover {
+    transform: scale(1.05, 1.09);
+}
+
+
+/* new back up again */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(172, 161, 161);
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+  
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+img {
+    display: flex;
+    width: 600px;
+    height: 310px;   
+    padding: 2px;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.473);
+    border: 3px solid rgba(0, 255, 255, 0.411);
+    border-radius: 19px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 25px;
+    border: 1px solid rgb(33, 48, 44);
+    background-color: rgb(10, 10, 10);
+    border-radius: 12px;
+    
+}
+
+.avatar {
+    width: 450px;
+    height: 300px;
+    padding: 0;
+    margin: 18px;
+    
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5{
+    font-size: 22px;
+}
+
+/* since hyperlink was removed, should hover have some styling to inform visitors to click these? */
+a {
+    text-decoration: none;
+}
+
+img {
+    -moz-box-shadow: inset 0 0 10px #777777;
+    -webkit-box-shadow: inset 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;   
+    
+}
+
+img:hover {
+    transform: scale(1.05, 1.09);
+}

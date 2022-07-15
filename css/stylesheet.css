@@ -1,145 +1,94 @@
-* {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(223, 207, 207);
-}
-
-/* sets background color for the whole body */
 body {
-    background-color: rgb(32, 30, 30);
-}
-
-
-/* section {
-    height: 600px;
-    width: 100%;
-    flex-wrap: wrap;
-    
-} */
-
-p {
-    line-height: 175%;
-    font-size: 20px;         
-}
-
-img {
-    width: 600px;
-    height: 310px;   
-    padding: 2px;
-    margin: 10px;
-    background-color: rgba(0, 255, 255, 0.473);
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgba(0, 255, 255, 0.411);
-    border-radius: 9px;
-    
-    /* flex-wrap: wrap;  */
-}
-
-h1 {
-    font-size: 42px;  
-    color: white;
-    width: 300px;
-    height: 100px;
-    margin-top: 8px;
-    
-}
-
-h2 {
-    font-size: 30px;
-    padding: 20px;
-    margin-top: 4px;
-     
-}
-
-/* -----start of the heading---- */
-#aboutmelink {
-    float: left;
-    border: 2px solid green;
-    width: 100px;
-    height: 400px;
-    font-size: 30px;
-
-    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
 }
 
 .mainheader {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3%;
+    margin: 1%;
+    
+}
+
+p {
+    display: flex;
+    font-size: 18px;
+}
+
+h3 {
+    width: 90%;
+    text-align: center;
+    padding: 4%;
+    margin: 1%;
 }
 
 nav ul li {
     list-style: none;
     display: inline-flex;
-    
     padding: 15px;
-    margin: 8px;
+    margin-right: 20px;
+    margin-bottom: 1%;
     font-size: 25px;
-    border-style: solid;
+    border: 1px solid rgb(33, 48, 44);
     background-color: rgb(10, 10, 10);
-    border-width: 1px;  
-    border-radius: 8px;
+    border-radius: 12px;
+    width: fit-content;
+    justify-content: space-evenly;
 }
-
-/* -----end of the heading---- */
-
-
-/* ---- START OF COPIED CODE ----------- */
-
-main {
-    /* Turns this element into a flexbox */
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-    margin-top: 2%;
-  }
-.maincontent {
-    /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.514);
-    border-width: 1px;
-    border-radius: 9px;
-}
-
-.maincontent.card {
-    /* With a flex-grow value of 2, this element grows twice as wide as others */
-    /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 2 1 200px;
-}
-
-/* -----start of the main content---- */
-
-/* -----    Links     ---- */
 
 /* since hyperlink was removed, should hover have some styling to inform visitors to click these? */
-a {
+nav li a {
     text-decoration: none;
+    color: white;
 }
 
-img {
+div ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 25px;
+    border: 1px solid rgb(33, 48, 44);
+    border-radius: 12px;
+    color: black;
+}
+
+
+
+.widget {
     -moz-box-shadow: inset 0 0 10px #777777;
     -webkit-box-shadow: inset 0 0 10px #777777;
     box-shadow: 0 0 10px #777777;    
+    background-color: rgba(0, 255, 255, 0.473);
+    border: 3px solid rgba(0, 255, 255, 0.411);
+    border-radius: 19px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 30%;
 }
 
-img:hover {
+img {
+    width: 50%;
+    height: 30%;
+    /* width: 600px;
+    height: 310px;    */
+    padding: 2px;
+    margin: 10px;
+    border: 3px solid rgba(0, 255, 255, 0.411);
+    border-radius: 19px;
+}
+
+.widget:hover {
     transform: scale(1.05, 1.09);
-}
-/* Insert @media queries here to show responsive design thru a desktop first approach*/
+} 
 
-@media screen and (max-width : 992px) {
-
-}
-
-@media screen and (max-width : 768px) {
-    
-}
-
-@media screen and (max-width : 576px) {
-    
-}
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
