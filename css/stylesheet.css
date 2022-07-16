@@ -7,14 +7,26 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3%;
-    margin: 1%;
+    padding: 2%;
+    margin: 0.5%;
     
 }
 
 p {
     display: flex;
     font-size: 18px;
+    padding: 12px;
+    margin: 6px;
+}
+
+h1 {
+    font-size: 54px;
+    margin-top: 2px;
+    margin-left: 0
+}
+
+h2 {
+    margin-left: 6px;
 }
 
 h3 {
@@ -47,8 +59,9 @@ nav li a {
 div ul li {
     list-style: none;
     display: inline-flex;
-    padding: 15px;
+    padding: 12px;
     margin-right: 20px;
+    margin-bottom: 6px;
     font-size: 25px;
     border: 1px solid rgb(33, 48, 44);
     border-radius: 12px;
@@ -74,17 +87,29 @@ div ul li {
 img {
     width: 50%;
     height: 30%;
-    /* width: 600px;
-    height: 310px;    */
     padding: 2px;
     margin: 10px;
     border: 3px solid rgba(0, 255, 255, 0.411);
     border-radius: 19px;
 }
 
+.profile {
+    width: 30%;
+    height: 15%;
+}
+
+.passgen {
+    width: 72%;
+    height: 48%;
+}
+
 .widget:hover {
     transform: scale(1.05, 1.09);
 } 
+
+nav ul li:hover {
+    transform: scale(1.05, 1.09);
+}
 
 @media screen and (max-width: 768px) {
     main,
