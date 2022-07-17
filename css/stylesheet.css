@@ -31,19 +31,16 @@ p {
     justify-content: space-evenly;
 }
 
-/* styling applied to all h1 elements */
 h1 {
     font-size: 54px;
     margin-top: 2px;
     margin-left: 0
 }
 
-/* styling applied to all h2 elements */
 h2 {
     margin-left: 6px;
 }
 
-/* styling applied to all h3 elements */
 h3 {
     width: 90%;
     text-align: center;
